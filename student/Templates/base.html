@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
     {% load static %}
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/logosvg.svg' %}">
-    <title>Learing Campus</title>
+    <title>Student Admin</title>
     <!-- Custom CSS -->
     <link href="{% static 'assets/extra-libs/c3/c3.min.css' %}" rel="stylesheet">
     <link href="{% static 'assets/libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
@@ -83,13 +84,102 @@
                             <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
                                 id="bell" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <span><i data-feather="bell" class="svg-icon"></i></span>
+                                <span><i class="fa fa-video-camera" aria-hidden="true"></i></span>
                                 <span class="badge text-bg-primary notify-no rounded-circle">5</span>
                             </a>
+                            
                             <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
                                 <ul class="list-style-none">
                                     <li>
                                         <div class="message-center notifications position-relative">
+                                            <!-- Message -->
+                                            <div class="block">
+                                                <h2 class="text-dark pt-3 fw-bolder ps-2">Live Class</h2>
+                                            </div>
+                                            <hr>
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+
+                                               
+                                                <div class="btn btn-danger rounded-circle btn-circle"><i
+                                                        data-feather="airplay" class="text-white"></i></div>
+                                                       
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                   
+                                                    <h6 class="message-title mb-0 mt-1">Luanch Admin</h6>
+                                                    <span class="font-12 text-nowrap d-block text-muted">Just see
+                                                        the my new
+                                                        admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-success text-white rounded-circle btn-circle"><i
+                                                        data-feather="calendar" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Event today</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">Just
+                                                        a reminder that you have event</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-info rounded-circle btn-circle"><i
+                                                        data-feather="settings" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Settings</h6>
+                                                    <span
+                                                        class="font-12 text-nowrap d-block text-muted text-truncate">You
+                                                        can customize this template
+                                                        as you want</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="javascript:void(0)"
+                                                class="message-item d-flex align-items-center border-bottom px-3 py-2">
+                                                <span class="btn btn-primary rounded-circle btn-circle"><i
+                                                        data-feather="box" class="text-white"></i></span>
+                                                <div class="w-75 d-inline-block v-middle ps-2">
+                                                    <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
+                                                        class="font-12 text-nowrap d-block text-muted">Just
+                                                        see the my admin!</span>
+                                                    <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                            <strong>Check all notifications</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
+                                id="bell" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                <span class="badge text-bg-primary notify-no rounded-circle">5</span>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="message-center notifications position-relative">
+                                            <div class="block">
+                                                <h2 class="text-dark pt-3 fw-bolder ps-2">Home Work</h2>
+                                            </div>
+                                            <hr>
                                             <!-- Message -->
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
@@ -210,7 +300,7 @@
                                 <img src="{% static 'assets/images/users/profile-pic.jpg' %}" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ms-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                        class="text-dark">Emad Ahmed</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-right user-dd animated flipInY">
@@ -256,15 +346,11 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
-                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                    class="hide-menu">Dashboard</span></a></li>
-                        <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="/"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Academic Module
+                                    class="hide-menu">Dashboard
                                 </span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
@@ -277,71 +363,112 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Components</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                    class="hide-menu">Forms </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
-                                            class="hide-menu"> Form Inputs
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
-                                            class="hide-menu"> Form Grids
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
-                                            class="hide-menu"> Checkboxes &
-                                            Radios
-                                        </span></a>
-                                </li>
-                            </ul>
+                            aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
+                                class="hide-menu">Student Module </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="{% url 'studentadd' %}" class="sidebar-link"><span
+                                        class="hide-menu"> Student Admission
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-dark-basic.html" class="sidebar-link"><span
+                                        class="hide-menu"> Print Admission Form
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-sizing.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                        Current Student List
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-layout-coloured.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                        Achieve Student List
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-datatable-basic.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                        Current Student Search
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                                class="hide-menu">
+                                Student Swicth Process
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                                class="hide-menu">
+                                Student Migration Process
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                                class="hide-menu">
+                                Print Student Id Card
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                                class="hide-menu">
+                                Student Biometric Export
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                                class="hide-menu">
+                                Print Student Testimonial
+                            </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                            class="hide-menu">Academic Module</span></a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                    class="hide-menu"> All Session
+                                </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
-                                    class="hide-menu">Tables </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="table-basic.html" class="sidebar-link"><span
-                                            class="hide-menu"> Basic Table
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="table-dark-basic.html" class="sidebar-link"><span
-                                            class="hide-menu"> Dark Basic Table
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="table-sizing.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            Sizing Table
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="table-layout-coloured.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            Coloured
-                                            Table Layout
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="table-datatable-basic.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            Basic
-                                            Datatables
-                                            Layout
-                                        </span></a>
-                                </li>
-                            </ul>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Medium
+                        </span></a>
                         </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Shift List
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Class List
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Section List
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Group List
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> All Subject List
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> Academic Calendar
+                        </span></a>
+                        </li>
+                    </ul>
+                </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="bar-chart" class="feather-icon"></i><span
-                                    class="hide-menu">Charts </span></a>
+                                    class="hide-menu">General Routine </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"><a href="chart-morris.html" class="sidebar-link"><span
-                                            class="hide-menu"> Morris Chart
+                                            class="hide-menu"> General Routine
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="chart-chart-js.html" class="sidebar-link"><span
-                                            class="hide-menu"> ChartJs
+                                            class="hide-menu"> Dynamic Routine
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="chart-knob.html" class="sidebar-link"><span
                                             class="hide-menu">
-                                            Knob Chart
+                                            View/Print Routine
                                         </span></a>
                                 </li>
                             </ul>
@@ -471,30 +598,20 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-
-        <div class="page-wrapper">
-            <!-- ============================================================== -->
-                {% block content %}{% endblock content %}
-            <!-- ============================================================== -->
-        </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        
+        <div class="page-wrapper">
+                {% block content %}{% endblock content %}
+        </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
+   
     <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
     <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
     <!-- apps -->
@@ -506,13 +623,7 @@
     <!--Custom JavaScript -->
     <script src="{% static 'dist/js/custom.min.js' %}"></script>
     <!--This page JavaScript -->
-    <script src="{% static 'assets/extra-libs/c3/d3.min.js' %}"></script>
-    <script src="{% static 'assets/extra-libs/c3/c3.min.js' %}"></script>
-    <script src="{% static 'assets/libs/chartist/dist/chartist.min.js' %}"></script>
-    <script src="{% static 'assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js' %}"></script>
-    <script src="{% static 'assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js' %}"></script>
-    <script src="{% static 'assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js' %}"></script>
-    <script src="{% static 'dist/js/custom.min.js' %}"></script>
+
 </body>
 
 </html>

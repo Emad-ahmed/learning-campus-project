@@ -1,5 +1,99 @@
 {% extends 'base.html' %}
 
+
+
+
 {% block content %}
-<h1>Hello</h1>
+{% load static %}
+<link href="{% static 'dist/css/student.css' %}" rel="stylesheet">
+<div class="row mb-5 ms-5 me-3 mt-4">
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-purple card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/student.png' %}" alt="">
+                </div>
+                <h2 class="mb-0 mt-0">160 <small class="d-block">Students</small></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-blue card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/teacher.png' %}" alt="">
+                </div>
+                <h2 class="mb-0 mt-0">15 <small class="d-block mt-2">Teachers</small></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-green card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/parent.png' %}" alt="">
+                </div>
+                <h2 class="text-white mb-0 mt-0">160 <small class="d-block mt-2">Parent</small></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-yellow card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/staff.png' %}" alt="">
+                </div>
+                <h2 class="text-white mb-0 mt-0">10 <small class="d-block mt-2">Staff</small></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-yellow1 card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/staff.png' %}" alt="">
+                </div>
+                <h2 class="text-white mb-0 mt-0">1500 <small class="d-block mt-2">Total Send SMS</small></h2>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-green2 card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/parent.png' %}" alt="">
+                </div>
+                <h2 class="text-white mb-0 mt-0">16000 <small class="d-block mt-2">Total Buy SMS</small></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div
+            class="single-asset-counting-list-box bg-gradient bg-gradient-blue2 card border-0 text-center">
+            <div class="card-body">
+                <div class="single-asset-counting-list-image-wrap">
+                    <img src="{% static 'assets/img/parent.png' %}" alt="">
+                </div>
+                <h2 class="text-white mb-0 mt-0">10000 <small class="d-block mt-2">SMS Balance</small></h2>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 {% endblock content %}

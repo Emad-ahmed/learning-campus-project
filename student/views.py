@@ -6,4 +6,9 @@ from django.http import HttpResponse
 class HomeView(View):
     def get(self, request):
         return render(request, 'index.html')
-    
+
+
+
+class StudentAddView(View):
+    def get(self, request):
+        return render(request, 'student_add.html')
