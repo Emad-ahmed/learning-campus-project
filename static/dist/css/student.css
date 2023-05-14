@@ -42,15 +42,6 @@
 background: #60B4F8;
 }
 
-.bg-gradient-green2
-{
-
-}
-
-.bg-gradient-blue2
-{
-
-}
 
 .u-content h5
 {
@@ -70,14 +61,7 @@ background: #60B4F8;
 
 /*base css start*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
-body {
-	font-family: 'Nunito', sans-serif;
-	background-color: #fff;
-}
-button {
-	border: 0;
-	cursor: pointer;
-}
+
 .card {
 	border-radius: 30px;
 	box-shadow: 0 1rem 3rem rgba(38, 0, 206, 0.2) !important;
@@ -162,69 +146,10 @@ button {
     box-shadow: 0 0 10px #eee;
 }
 
-/*btns start*/
-.btn-sm {
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 30px;
-    height: 50px;
-    line-height: 40px;
-    text-align: center;
-    min-width: 210px;
-    box-shadow: 0 1rem 3rem rgba(38, 0, 206, 0.2);
-}
-.btn-light {
-	background-color: #fff;
-	color: #130041;
-}
-.btn-light:hover {
-    color: #130041;
-    background-color: #f2f2f2;
-    border-color: #f2f2f2;
-}
-.btn-outline-light {
-    color: #fff;
-    background-color: transparent;
-    background-image: none;
-    border-color: #fff;
-}
-.btn-outline-light:hover {
-	color: #130041;
-	background-color: #fff;
-}
-/*btns end*/
 
 
-/*base css end*/
 
 
-.u-header {
-    margin: 30px 30px 0;
-    padding: 20px 20px;
-    box-shadow: 0 1rem 3rem rgba(38, 0, 206, 0.2) !important;
-    border-radius: 20px;
-    border: 0;
-}
-.u-header-search-form {
-	border: 1px solid #130041;
-	border-radius: 30px;
-	overflow: hidden; 
-	padding-left: 20px;
-}
-.u-header-search-form button {
-	padding: 0 35px;
-	border-radius: 30px;
-	margin-left: auto;
-}
-
-
-.u-header-right .dropdown span.h3 {
-	font-size: 19px;
-}
-.us-u-avatar-wrap small {
-	font-size: 14px;
-	margin-left: 10px;
-}
 img.u-avatar--xs {
     border: 2px solid #130041;
     width: 38px;
@@ -238,113 +163,7 @@ img.u-avatar--xs {
 }
 
 
-/*menu sidebar start*/
-.u-sidebar-inner {
-	padding: 20px 20px;
-	width: 250px;
-}
 
-
-.u-sidebar-nav-menu__link {
-    padding: 0.88rem 7px;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid #fff;
-    margin-bottom: 18px;
-}
-.mini-action .u-sidebar-nav-menu__link {
-	padding: .88rem 11px;
-}
-.u-sidebar-nav-menu__item-icon {
-	color: inherit;
-	transition: all 0.3s ease-out;
-}
-.u-sidebar-nav-menu__item-icon {
-	color: inherit;
-	padding-left: 5px;
-}
-.u-sidebar-nav-menu__link:hover {
-    color: #f1f1f1;
-    background-color: #3000a1;
-}
-.u-sidebar-nav-menu__link:hover .u-sidebar-nav-menu__item-icon {
-    color: #f1f1f1;
-}
-.u-sidebar-nav-menu__item-arrow {
-	color: #fff;
-	display: none;
-}
-
-.u-sidebar-nav-menu__link.active, .u-sidebar-nav-menu--top-level > .u-sidebar-nav--opened > .u-sidebar-nav-menu__link {
-    color: #130041;
-    background-color: #fff;
-}
-.u-sidebar-nav-menu__link.active .u-sidebar-nav-menu__item-icon, .u-sidebar-nav-menu--top-level > .u-sidebar-nav--opened > .u-sidebar-nav-menu__link .u-sidebar-nav-menu__item-icon {
-    color: #130041;
-}
-.u-sidebar-nav-menu--second-level {
-	margin-left: 25px;
-}
-.u-sidebar-nav-menu--second-level .u-sidebar-nav-menu__link {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 0 0;
-    border: 0;
-}
-.u-sidebar-nav-menu--second-level .u-sidebar-nav-menu__link:hover {
-    background-color: transparent;
-    color: #ccc;
-}
-
-
-.mini.action .u-sidebar-inner {
-    padding: 1.5rem .5rem;
-}
-.mini.action .u-sidebar-nav-menu--second-level {
-	margin-left: 0;
-}
-.mini.action .u-sidebar-nav-menu--second-level .u-sidebar-nav-menu__link {
-	color: #130041;
-	padding: .88rem 1.25rem;
-	background-color: transparent;
-	box-shadow: 0 0 !important;
-}
-.mini.action .u-sidebar-nav-menu--second-level .u-sidebar-nav-menu__link:hover {
-	color: #fff;
-	background-color: transparent;
-}
-.side-nav-on-action .u-sidebar-nav-menu__link {
-	padding: 11px 11px;
-}
-/*.menu-sidebar end*/
-
-.u-body {
-	padding-top: 0;
-}
-
-
-/*breadcumb start*/
-.breadcumb-area {
-	height: 200px;
-	margin-top: 50px;
-	position: relative;
-	padding-left: 45px;
-	padding-right: 45px;
-}
-.breadcumb-heading h2 {
-	margin-bottom: 0;
-	font-weight: 700;
-	font-size: 60px;
-	position: relative;
-	z-index: 3;
-}
-.breadcumb-image {
-	position: absolute;
-	right: 20px;
-	bottom: 0;
-}
 /*breadcumb end*/
 
 .card-headder {
@@ -831,11 +650,7 @@ img.u-avatar--xs {
 	justify-content: space-between;
 	color: blue;
 }
-.pending_img
-{
-	height: 80px;
-	width: 80px;
-}
+
 .process_btn
 {
 	background-color: darkblue;

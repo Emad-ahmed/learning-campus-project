@@ -12,3 +12,14 @@ class HomeView(View):
 class StudentAddView(View):
     def get(self, request):
         return render(request, 'student_add.html')
+
+
+
+class StudenPrintView(View):
+    def get(self, request):
+        return render(request, 'print_admission_form.html')
+
+
+class StudenMigrations(View):
+    def get(self, request):
+        return render(request, 'student_migration.html')
