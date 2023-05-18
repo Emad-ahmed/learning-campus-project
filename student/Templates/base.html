@@ -353,15 +353,34 @@
                                     class="hide-menu">Dashboard
                                 </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                    class="hide-menu">Chat</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
-                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Calendar</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
+                                class="hide-menu">Global Setting </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="{% url 'studentadd' %}" class="sidebar-link"><span
+                                        class="hide-menu"> Institute
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="{% url 'studentprint' %}" class="sidebar-link"><span
+                                        class="hide-menu"> Branch
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-sizing.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                        SMS Settings
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="table-layout-coloured.html" class="sidebar-link"><span
+                                        class="hide-menu">
+                                        Academic Holiday
+                                    </span></a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                 
 
-                        <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Components</span></li>
+                        
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
                                 class="hide-menu">Student Module </span></a>
@@ -399,7 +418,7 @@
                                 Student Migration Process
                             </span></a>
                             </li>
-                            <li class="sidebar-item"><a href="Archieve Student Search" class="sidebar-link"><span
+                            <li class="sidebar-item"><a href="{% url 'studentidprint' %}" class="sidebar-link"><span
                                 class="hide-menu">
                                 Print Student Id Card
                             </span></a>
@@ -456,7 +475,7 @@
                 </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="bar-chart" class="feather-icon"></i><span
-                                    class="hide-menu">General Routine </span></a>
+                                    class="hide-menu">Routine Module </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"><a href="chart-morris.html" class="sidebar-link"><span
                                             class="hide-menu"> General Routine
@@ -473,84 +492,415 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                class="hide-menu">Student Attendence</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                        class="hide-menu"> Todays Attendence
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Manual Attendence
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Absent Student List
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Attendence Details
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Daily Attendence Summary
+                            </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Montly Attendence Summa
+                            </span></a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                            class="hide-menu">Employee Attendence</span></a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                    class="hide-menu"> Todays Attendence
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> Manual Attendence
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> Attendence Details
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> Daily Attendence Summary
+                        </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                            class="hide-menu"> Monthly Attendence Summa
+                        </span></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                    aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                        class="hide-menu">HR Module</span></a>
+                <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                class="hide-menu"> Employee Type
+                            </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> All Designation
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> Working Shift
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> Add Employee
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> All Employee List
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> Employee's Search
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> Employee's ID Card
+                    </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                        class="hide-menu"> Employee's Export(Att.)
+                    </span></a>
+                    </li>
+                </ul>
+            </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                    class="hide-menu">UI Elements </span></a>
+                                    class="hide-menu">Leave Module </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
                                 <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
-                                            class="hide-menu"> Buttons
+                                            class="hide-menu"> Leave Types
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
-                                            class="hide-menu"> Modals </span></a>
+                                            class="hide-menu"> Leave Entry </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
-                                            class="hide-menu"> Tabs </span></a></li>
-                                <li class="sidebar-item"><a href="ui-tooltip-popover.html" class="sidebar-link"><span
-                                            class="hide-menu"> Tooltip &
-                                            Popover</span></a></li>
-                                <li class="sidebar-item"><a href="ui-notification.html" class="sidebar-link"><span
-                                            class="hide-menu">Notification</span></a></li>
-                                <li class="sidebar-item"><a href="ui-progressbar.html" class="sidebar-link"><span
-                                            class="hide-menu">Progressbar</span></a></li>
-                                <li class="sidebar-item"><a href="ui-typography.html" class="sidebar-link"><span
-                                            class="hide-menu">Typography</span></a></li>
-                                <li class="sidebar-item"><a href="ui-bootstrap.html" class="sidebar-link"><span
-                                            class="hide-menu">Bootstrap
-                                            UI</span></a></li>
-                                <li class="sidebar-item"><a href="ui-breadcrumb.html" class="sidebar-link"><span
-                                            class="hide-menu">Breadcrumb</span></a></li>
-                                <li class="sidebar-item"><a href="ui-list-media.html" class="sidebar-link"><span
-                                            class="hide-menu">List
-                                            Media</span></a></li>
-                                <li class="sidebar-item"><a href="ui-grid.html" class="sidebar-link"><span
-                                            class="hide-menu"> Grid </span></a></li>
-                                <li class="sidebar-item"><a href="ui-carousel.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            Carousel</span></a></li>
-                                <li class="sidebar-item"><a href="ui-scrollspy.html" class="sidebar-link"><span
-                                            class="hide-menu">
-                                            Scrollspy</span></a></li>
-                                <li class="sidebar-item"><a href="ui-toasts.html" class="sidebar-link"><span
-                                            class="hide-menu"> Toasts</span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="ui-spinner.html" class="sidebar-link"><span
-                                            class="hide-menu"> Spinner </span></a>
-                                </li>
+                                            class="hide-menu"> Manage Leaves </span></a></li>
+                                
                             </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ui-cards.html"
-                                aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                                    class="hide-menu">Cards
-                                </span></a>
-                        </li>
-                        <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
-                                aria-expanded="false"><i data-feather="lock" class="feather-icon"></i><span
-                                    class="hide-menu">Login
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
-                                href="authentication-register1.html" aria-expanded="false"><i data-feather="lock"
-                                    class="feather-icon"></i><span class="hide-menu">Register
-                                </span></a>
                         </li>
 
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="feather" class="feather-icon"></i><span
-                                    class="hide-menu">Icons
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Payroll Module </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                                        class="hide-menu"> Payroll Head
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                                        class="hide-menu"> Employee Payscale </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                        class="hide-menu"> Employees Salary Chart </span></a></li>
+                            
+                            
+                        <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                            class="hide-menu"> Generate Salary Sheet </span></a></li>
+                        
+
+                        <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                class="hide-menu"> Employees Salary Payment </span></a></li>
+                        
+                        <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                    class="hide-menu"> Employees Salary Report </span></a></li>
+                        
+                        <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                        class="hide-menu"> Employees Pay Slip Print </span></a></li>
+                        
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                            class="hide-menu">Exam Setting </span></a>
+                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                                    class="hide-menu"> Grade Points
                                 </span></a>
-                            <ul aria-expanded="false" class="collapse first-level base-level-line">
-                                <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link"><span
-                                            class="hide-menu"> Fontawesome Icons </span></a></li>
-
-                                <li class="sidebar-item"><a href="icon-simple-lineicon.html" class="sidebar-link"><span
-                                            class="hide-menu"> Simple Line Icons </span></a></li>
-                            </ul>
                         </li>
+                        <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                                    class="hide-menu"> Exam Terms </span></a>
+                        </li>
+                        <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                    class="hide-menu"> Exam Part </span></a></li>
+                        
+                        
+                    <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                        class="hide-menu"> Assign Exam </span></a></li>
+                    
 
+                    <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                            class="hide-menu"> Working Days </span></a></li>
+                    
+                    <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                class="hide-menu"> Result Settings </span></a></li>
+                    
+                   
+                    
+                    </ul>
+                </li>
+
+                <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                    aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                        class="hide-menu">Result Module </span></a>
+                <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                    <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                                class="hide-menu"> Exam Routine
+                            </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                                class="hide-menu"> Exam Eligibilities </span></a>
+                    </li>
+                    <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                class="hide-menu"> Exam Seat Plan </span></a></li>
+                    
+                    
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                    class="hide-menu"> Exam Admit Card </span></a></li>
+                
+
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                        class="hide-menu"> Exam Attn. Blank </span></a></li>
+                
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                            class="hide-menu"> Exam Attn.(Subject) </span></a></li>
+                
+               
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                class="hide-menu"> Exam Attn.(Exam) </span></a></li>
+                                                
+                
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                    class="hide-menu"> Marks Blank Sheet </span></a></li>
+
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                        class="hide-menu"> Marks Entry (Subject) </span></a></li>
+
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                                            class="hide-menu"> Marks Entry (Exam) </span></a></li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                    class="hide-menu">Result Reports </span></a>
+            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                            class="hide-menu"> Students Merit List
+                        </span></a>
+                </li>
+                <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                            class="hide-menu"> Students Report Card </span></a>
+                </li>
+                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                            class="hide-menu"> Students Wise Transcipt </span></a></li>
+                
+                
+            
+            </ul>
+        </li>
+
+        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                class="hide-menu">Finance Module </span></a>
+        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+            <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                        class="hide-menu"> Account Head
+                    </span></a>
+            </li>
+            
+            
+            
+        
+        </ul>
+    </li>
+
+
+    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+        aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+            class="hide-menu">Student Account </span></a>
+    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                    class="hide-menu"> Admission Fees
+                </span></a>
+        </li>
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+            class="hide-menu"> Monthly Fees
+        </span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Student Fees
+</span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Student Waiver
+</span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Quick Collection
+</span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Fees Collection
+</span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Fees ReCollection
+</span></a>
+</li>
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Print Collection Invoice
+</span></a>
+</li>
+        </ul>
+    </li>
+
+    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+        aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+            class="hide-menu">Account Boucher</span></a>
+    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                    class="hide-menu"> Recive Boucher(+)
+                </span></a>
+        </li>
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+            class="hide-menu"> Payment Boucher(-)
+        </span></a>
+</li>
+
+        </ul>
+    </li>
+
+
+    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+        aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+            class="hide-menu">Finance Reports</span></a>
+    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                    class="hide-menu"> Daily Collection
+                </span></a>
+        </li>
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+            class="hide-menu"> Fees Collection
+        </span></a>
+</li>
+
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Student Dues
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Students Ledger
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Students Waiver
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Accounts Ledger
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Trial Balance
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Cash Book
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Bank Book
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Balance Sheet
+</span></a>
+</li>
+
+        </ul>
+    </li>
+
+
+
+    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+        aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+            class="hide-menu">Learning Module</span></a>
+    <ul aria-expanded="false" class="collapse  first-level base-level-line">
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                    class="hide-menu"> Live Classes
+                </span></a>
+        </li>
+        <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+            class="hide-menu"> Home Work List
+        </span></a>
+</li>
+
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> H.W Submitted
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Class Work List
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> C.W Submitted
+</span></a>
+</li>
+
+<li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+    class="hide-menu"> Leason Plan List
+</span></a>
+</li>
+
+
+
+        </ul>
+    </li>
+                        
+                      
                         
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>

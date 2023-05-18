@@ -23,3 +23,8 @@ class StudenPrintView(View):
 class StudenMigrations(View):
     def get(self, request):
         return render(request, 'student_migration.html')
+    
+
+class PrintStudentId(View):
+    def get(self, request):
+        return render(request, 'print_student_id.html')
